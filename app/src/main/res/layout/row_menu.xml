@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/medium_pad"
+    app:cardCornerRadius="@dimen/small_pad"
+    app:cardBackgroundColor="@color/white"
+    android:elevation="10dp"
+   >
+<LinearLayout
+    android:paddingBottom="@dimen/medium_pad"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        style="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="256dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/Heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hawaiian"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/txtIngridients"
+        android:layout_weight="2"
+        style="@style/SubHeading"
+        android:layout_width="0dp"
+        android:textColor="@color/grey_font"
+        android:layout_height="wrap_content"
+        android:text="Pineaple ,Mozarella , Special Chillie Sauce"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:gravity="left"
+        />
+
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_pad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:padding="@dimen/small_pad"
+            android:text="55 usd"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
